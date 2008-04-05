@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/mednafen/%{name}-%{version}.tar.bz2
 URL:		http://mednafen.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
+BuildRequires:	SDL_net-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libcdio-devel
