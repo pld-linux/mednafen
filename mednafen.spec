@@ -1,12 +1,12 @@
 Summary:	Multi-game-system emulator using OpenGL
 Summary(pl.UTF-8):	Wieloplatformowy emulator gier używający OpenGL
 Name:		mednafen
-Version:	0.8.A
+Version:	0.8.B
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/mednafen/%{name}-%{version}.tar.bz2
-# Source0-md5:	7911635447a95b559af2eee96825ad9a
+# Source0-md5:	d1aab33cbb5d4e585724c19177f0f02f
 URL:		http://mednafen.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
