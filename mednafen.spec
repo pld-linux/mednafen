@@ -1,12 +1,13 @@
 Summary:	Multi-game-system emulator using OpenGL
 Summary(pl.UTF-8):	Wieloplatformowy emulator gier używający OpenGL
 Name:		mednafen
-Version:	0.8.C
+Version:	0.8.D
 Release:	1
 License:	GPL v2+
 Group:		Applications/Emulators
-Source0:	http://dl.sourceforge.net/mednafen/%{name}-%{version}.tar.bz2
-# Source0-md5:	e8f4b6ba7ed2eca399b02578e1803831
+Source0:	http://downloads.sourceforge.net/mednafen/%{name}-%{version}.tar.bz2
+# Source0-md5:	4c3f337f80bf54d2df0f3a0f24203141
+Patch0:		%{name}-gcc45.patch
 URL:		http://mednafen.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
@@ -34,6 +35,7 @@ Neo Geo Pocket (Color), PC-FX, oraz WonderSwan (Color).
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__libtoolize}
